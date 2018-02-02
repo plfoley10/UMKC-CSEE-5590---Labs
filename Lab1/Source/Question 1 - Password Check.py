@@ -29,6 +29,11 @@ def CheckForCharacter (s):
     chars = set('[$@!*]')
     return any((c in chars) for c in s)
 
+def CheckForLetters (s):
+    # This function checks to see if there are letters in the password.
+    return any(c.isalpha() for c in s)
+
+
 def CheckForCase (s):
     # This function checks to see that there is at least one upper case and one lower case letter in the password.
     return s.isupper()
@@ -48,13 +53,18 @@ while i < 1:
         if CheckForNumber(password) == True:
             # If the password has at least one special character then check the next requirement.
             if CheckForCharacter(password) == True:
-                # If the password has at least one upper case and one lower case then check the next requirement.
-                if (CheckForCase(password) != True):
-                    i = 1
-                # If the length isn't between 6 to 16 then tell the user the password doesn't meet the length req.
+                if CheckForLetters(password) == True:
+                    # If the password has at least one upper case and one lower case then check the next requirement.
+                    if (CheckForCase(password) != True):
+                        i = 1
+                    # The password must have at least one uppercase and one lowercase letter.
+                    else:
+                        print("Password does not contain one lowercase and one uppercase letter.",
+                        "The password must have one lowercase and one uppercase character.", sep="\n")
+                # The password must contain a letter.
                 else:
-                    print("Password does not contain one lowercase and one uppercase character.",
-                          "The password must have one lowercase and one uppercase character.", sep="\n")
+                    print("Password does not contain a letter.",
+                          "The password must have at least two letters. One uppercase and one lowercase.", sep="\n")
             # If the password doesn't contain a special character then tell the user.
             else:
                 print("Password does not contain a special character.",
