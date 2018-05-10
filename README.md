@@ -5,3 +5,7 @@ Lab 2 Writeup - https://github.com/plfoley10/UMKC-CSEE-5590---Labs/blob/master/L
 Lab 3 - https://github.com/plfoley10/UMKC-CSEE-5590---Labs/wiki/Lab-3-Wiki-Page
 
 Lab 4 - https://github.com/plfoley10/UMKC-CSEE-5590---Labs/wiki/Lab-4-Wiki-Page
+
+Lab 5 - https://github.com/plfoley10/UMKC-CSEE-5590---Labs/wiki/Lab-5-Wiki-Page
+
+Lab 6 - https://github.com/plfoley10/UMKC-CSEE-5590---Labs/wiki/Lab-6-Wiki-Page
